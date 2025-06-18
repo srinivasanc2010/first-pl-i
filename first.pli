@@ -1,0 +1,12 @@
+
+/* Sample PL/I Program */
+DECLARE NUM FIXED DECIMAL(5,0);
+DECLARE SQUARE FIXED DECIMAL(10,0);
+
+PUT SKIP LIST('Enter a number:');
+GET LIST(NUM);
+
+SQUARE = NUM * NUM;
+
+PUT SKIP LIST('The square of the number is:', SQUARE);
+END;
